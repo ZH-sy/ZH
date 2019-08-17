@@ -1,0 +1,181 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>选择题</title>
+<style type="text/css">
+a img
+	{
+		border:0;
+	}
+a img:hover
+	{	
+		border:0;
+	}
+body
+	{
+		cursor:url(images/gb.png),pointer;
+		overflow:scroll;
+        overflow-x:hidden;
+		overflow-y: hidden;
+		margin:0;
+	}
+.a1
+	{
+		position:relative;
+		margin:0 auto;
+		width:800px;
+		height: 600px;
+	}
+	
+#an1
+	{
+		position:absolute;
+		top:70px;
+		left:50px;
+    }
+#an2
+	{
+		position:absolute;
+		top:100px;
+		left:50px;
+	}
+#an3
+	{
+		position:absolute;
+		top:130px;
+		left:50px;
+	}
+
+	
+#neirong
+	{
+	position: absolute;
+	top: 210px;
+	left: 190px;
+	width: 450px;
+	height: 120px;
+	font-family: "幼圆";
+	color: #FFFFFF;
+	font-weight: bold;
+	}
+#neirong h2
+	{
+		font-size:20px;
+	}
+#neirong ul
+	{
+		font-size:20px;
+	}
+	
+#result1
+	{
+		position: absolute;
+		top: 180px;
+		left: 60px;
+		width: 410px;
+		height: 200px;
+		font-family:"幼圆";
+		color:#FF0004;
+		font-size: 20px;
+	}
+#result2
+	{
+		position: absolute;
+		top: 180px;
+		left: 60px;
+		width: 430px;
+		height: 200px;
+		font-family:"幼圆";
+		color:#FF0004;
+		font-size: 20px;
+	}
+#result3
+	{
+		position: absolute;
+		top: 180px;
+		left: 60px;
+		width: 430px;
+		height: 200px;
+		font-family:"幼圆";
+		color:#000A5F;
+		font-size: 20px;
+	}
+
+#last
+{
+	top: 565px;
+	position: absolute;
+	left:85%;
+}
+.return
+{
+	position: absolute;
+	left: 5%;
+	top: 565px;
+}
+#next:hover,#last:hover,.return:hover
+{
+	transform:scale(1.3);
+}	
+</style>
+
+<script type="text/javascript">
+function myFunction()
+{
+	var abc=document.myform.answer.value;
+	if(abc=="answer1")
+	{
+		document.getElementById("result1").style.display = "block";
+		document.getElementById("result2").style.display = "none";
+		document.getElementById("result3").style.display = "none";
+	}
+	
+	else if(abc=="answer2")
+	{
+		document.getElementById("result2").style.display = "block";
+		document.getElementById("result1").style.display = "none";
+		document.getElementById("result3").style.display = "none";
+	}
+	else if(abc=="answer3")
+	{
+		document.getElementById("result3").style.display = "block";
+		document.getElementById("result1").style.display = "none";
+		document.getElementById("result2").style.display = "none";
+	}
+}
+</script>
+</head>
+
+<body>
+<div class="a1">
+	<img src="images/cgxzbj.jpg" width="800" height="619">
+
+	<div id="neirong">
+   	  <h2>7&nbsp;.&nbsp;你希望在篮球比赛团队中扮演什么样的角色？</h2>
+		<form action="" method="post" name="myform" id="myform">
+			<ul style="list-style:none;">
+				<li id="an1"><input type="radio" value="answer1" name="answer" onClick="myFunction()"/>A:后卫——串联球队，支配球权 </li>
+				<li id="an2"><input type="radio" value="answer2" name="answer" onClick="myFunction()"/>B:前锋——里突外投，积极防守 </li>
+				<li id="an3"><input type="radio" value="answer3" name="answer" onClick="myFunction()"/>C:中锋——篮下拼抢，正面对抗</li>
+			</ul>
+		</form>
+		<div id="result1" style="display:none">恭喜你，快去练习运球和传球吧</div>
+		<div id="result2" style="display:none">恭喜你，快去练习突破和投篮吧</div>
+		<div id="result3" style="display:none">恭喜你，快去练习低位技术和防守吧</div>
+	</div>
+	
+	<div id="last">
+		<a href="cgxz2.html">
+  	    <img src="images/last.png" width="80" height="40">
+   		</a>
+    </div>
+	
+	<div class="return">
+	  <a href="cgcs1.html">
+	  <img src="images/return2.png" width="80px";height="50px">
+	  </a>
+	</div>
+</div>
+</body>
+</html>
