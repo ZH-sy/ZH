@@ -1,0 +1,135 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>场上位置</title>
+<style type="text/css">
+a img
+	{
+		border:0;
+	}
+a img:hover
+	{	
+		border:0;
+	}
+body
+	{
+		cursor:url(images/gb.png),pointer;
+		overflow:scroll;
+        overflow-x:hidden;
+		overflow-y: hidden;
+		margin:0;
+	}
+.a1
+{
+	    width:1000px;
+		height: 650px;
+		position:fixed;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		margin: auto;
+}
+.a2
+{
+	position: absolute;
+	left:68.3%;
+	top:4px;
+	width:123px;
+	height:123px;
+}
+.zhalan
+{
+	position:absolute;
+	top:83.4%;
+	left:14%;
+	width:695px;
+	height:50px;
+}
+#neirong 
+{
+	width:500px;
+	position:absolute;
+	left:220px;
+	top:140px;
+}
+#showStr
+{
+	line-height:1.5;
+	font-size: 20px;
+	color:#FFFFFF;
+	font-family: "幼圆";
+	font-weight:normal;
+}
+#next
+{
+	top: 550px;
+	position: absolute;
+	left: 86%;
+}
+.return
+{
+	position: absolute;
+	left: 86%;
+	top: 590px;
+}
+#next:hover,#last:hover,.return:hover
+{
+	transform:scale(1.3);
+}	
+</style>
+</head>
+
+<body>
+<div class="a1">
+	<img src="images/cswzbg.png" width="1000" height="650px">
+	
+	<div id="next">
+		<a href="zsjt4.html"><img src="images/next.png" width="80px" height="35px"></a>
+	</div>
+	
+<div class="return">
+	  <a href="zsjtmenu.html">
+	  <img src="images/return2.png" width="80px";height="50px">
+	  </a>
+	</div>
+	
+	<div class="a2">
+		<img src="images/sl.gif" width="123px",height="123px";>
+	</div>
+	
+<div class="zhalan">
+	<img src="images/zhalan.jpg"width="695px",height="50px">
+</div>
+	
+	
+	
+<div id="neirong">
+	<p id="showStr"></p>
+<p style="display:none" id="string">
+1）控球后卫（PG）: 又称1号位，是进攻组织者，通过对球的控制来决定在恰当的时间传球给适合的球员。
+
+2）得分后卫（SG）: 又称2号位，是以得分为主要任务的司职。 得分后卫要有很好的持球单打能力，或作为一个稳定的接球跳投手。
+
+3）小前锋（SF）: 又称3号位，是球队中重要的得分者，最根本的要求是要能得分和冲击篮筐。
+</p>
+<script type="text/javascript">
+  var index = 0;  
+  var str = document.getElementById("string").innerHTML;  
+  setInterval(function() {  
+   if(index == str.length) { 
+//清除定时器
+clearInterval();
+//若要让效果无限循环，把index归0即可
+// index = 0;
+}  
+var a = document.getElementById("showStr")
+a.innerText = str.substring(0, index++);
+},0)
+</script>
+	
+</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,125 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>专业术语</title>
+<style type="text/css">
+a img
+	{
+		border:0;
+	}
+a img:hover
+	{	
+		border:0;
+	}
+body
+	{
+		cursor:url(images/gb.png),pointer;
+		overflow:scroll;
+        overflow-x:hidden;
+		overflow-y: hidden;
+		margin:0;
+	}
+.a1
+{
+	    width:1000px;
+		height: 650px;
+		position:fixed;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		margin: auto;
+}
+.a2
+{
+	position: absolute;
+	left:68.3%;
+	top:4px;
+	width:123px;
+	height:123px;
+}
+.zhalan
+{
+	position:absolute;
+	top:83.4%;
+	left:14%;
+	width:695px;
+	height:50px;
+}
+#neirong 
+{
+	width:500px;
+	position:absolute;
+	left:220px;
+	top:125px;
+}
+#showStr
+{
+	line-height:1.5;
+	font-size: 20px;
+	color:#FFFFFF;
+	font-family: "幼圆";
+	font-weight:normal;
+}
+.return
+{
+	position: absolute;
+	left: 86%;
+	top: 590px;
+}
+#next:hover,#last:hover,.return:hover
+{
+	transform:scale(1.3);
+}	
+</style>
+</head>
+
+<body>
+<div class="a1">
+	<img src="images/zysybg.png" width="1000" height="650px">
+	
+<div class="return">
+	  <a href="zsjtmenu.html">
+	  <img src="images/return2.png" width="80px";height="50px">
+	  </a>
+	</div>
+	
+	<div class="a2">
+		<img src="images/sl.gif" width="123px",height="123px";>
+	</div>
+	
+<div class="zhalan">
+	<img src="images/zhalan.jpg"width="695px",height="50px">
+</div>
+	
+	
+	
+<div id="neirong">
+	<p id="showStr"></p>
+<p style="display:none" id="string">
+1）扣篮：运动员用单手或双手持球，跳起在空中自上而下直接将球扣进篮圈。
+2）补篮：投篮不中时，运动员跳起在空中将球补进篮内。
+3）卡位：进攻人运用脚步动作把防守者挡在自己身后，这种步法叫卡位。
+4）要位：进攻人用身体把防守人挡在身后，占据有利的接球位置。
+5）突破：运球超越防守人。
+6）空切：进攻人空手向篮跑动
+</p>
+<script type="text/javascript">
+  var index = 0;  
+  var str = document.getElementById("string").innerHTML;  
+  setInterval(function() {  
+   if(index == str.length) { 
+//清除定时器
+clearInterval();
+//若要让效果无限循环，把index归0即可
+// index = 0;
+}  
+var a = document.getElementById("showStr")
+a.innerText = str.substring(0, index++);
+},0)
+</script>
+</div>
+	</div>
+</body>
+</html>

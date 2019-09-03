@@ -1,0 +1,91 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>闯关说明</title>
+<style type="text/css">
+a img
+	{
+		border:0;
+	}
+a img:hover
+	{	
+		border:0;
+	}
+body
+	{
+		cursor:url(images/gb.png),pointer;
+		overflow:scroll;
+        overflow-x:hidden;
+		overflow-y: hidden;
+		margin:0;
+	}
+.a1
+	{
+		width:1000px;
+		height: 650px;
+		position:fixed;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		margin: auto;
+	}
+.a2
+	{
+		line-height: 2;
+		position: absolute;
+		width: 500px;
+		height: 500px;
+		left: 260px;
+		top: 170px;
+		font-family: "幼圆";
+		font-size: 20px;
+	}
+.return
+{
+	position: absolute;
+	left: 87%;
+	top: 580px;
+}
+#next:hover,.return:hover
+{
+	transform:scale(1.3);
+}	
+</style>
+
+</head>
+
+<body>
+	<div class="a1">
+		<img src="images/cgsmbg.jpg" width="1000px" height="650px">
+		<div class="a2">
+		<p id="showStr"></p>
+			<p style="display:none" id="string">小朋友，经过上一模块的知识学习，你一定对篮球有了更深入的了解，现在就让我们来验证我们的成果吧！火眼辨真假，需要小朋友对题目的陈述做出正确的判断！选择出真知，需要小朋友运用所学知识选出正确的答案!连线大挑战，考察的知识面更广，需要小朋友将正确的答案相互对应哦。
+			</p>
+		</div>
+		
+		<div class="return">
+	  <a href="cgcs1.html">
+	  <img src="images/return2.png" width="80px";height="50px">
+	  </a>
+	</div>
+	<script type="text/javascript">
+  		var index = 0;  
+  		var str = document.getElementById("string").innerHTML;  
+  		setInterval(function() {  
+   		if(index == str.length) { 
+				//清除定时器
+			clearInterval();
+				//若要让效果无限循环，把index归0即可
+				// index = 0;
+								}  
+			var a = document.getElementById("showStr")
+			a.innerText = str.substring(0, index++);
+			},0)
+		</script>
+	</div>
+
+
+</body>
+</html>
