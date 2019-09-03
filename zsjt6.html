@@ -1,0 +1,120 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>安全常识</title>
+<style type="text/css">
+a img
+	{
+		border:0;
+	}
+a img:hover
+	{	
+		border:0;
+	}
+body
+	{
+		cursor:url(images/gb.png),pointer;
+		overflow:scroll;
+        overflow-x:hidden;
+		overflow-y: hidden;
+		margin:0;
+	}
+.a1
+{
+	position:relative;
+	margin:0 auto;
+	width:800px;
+	height:620px;
+}
+.a2
+{
+	position: absolute;
+	left:68.3%;
+	top:4px;
+	width:123px;
+	height:123px;
+}
+.zhalan
+{
+	position:absolute;
+	top:83.4%;
+	left:14%;
+	width:557px;
+	height:50px;
+}
+#neirong 
+{
+	width:500px;
+	position:absolute;
+	left:150px;
+	top:140px;
+}
+#showStr
+{
+	line-height:1.5;
+	font-size: 18px;
+	color:#FFFFFF;
+	font-family: "幼圆";
+	font-weight:normal;
+}
+.return
+{
+	position: absolute;
+	left: 85%;
+	top: 540px;
+}
+#next:hover,#last:hover,.return:hover
+{
+	transform:scale(1.3);
+}	
+</style>
+</head>
+
+<body>
+<div class="a1">
+	<img src="images/aqcsbg.png" width="800" height="620px">
+	
+<div class="return">
+	  <a href="zsjtmenu.html">
+	  <img src="images/return2.png" width="80px";height="50px">
+	  </a>
+	</div>
+	
+	<div class="a2">
+		<img src="images/sl.gif" width="123px",height="123px";>
+	</div>
+	
+<div class="zhalan">
+	<img src="images/zhalan.jpg"width="557px",height="50px">
+</div>
+	
+	
+	
+<div id="neirong">
+	<p id="showStr"></p>
+<p style="display:none" id="string">
+1)赛前热身：轻微慢跑、扭动脚踝、下蹲运动、深呼吸、活动手腕和胳膊，运球训练放松四肢肌肉等。
+
+2)赛中注意：比赛中或结束不要立即大量饮水，若受伤，不要着急走动，判断好伤情再用药或就医。
+
+3)赛后放松：比赛结束，不要立即坐下，应放松身体各部位肌肉，洗澡冲洗热水，防止酸痛。
+</p>
+<script type="text/javascript">
+  var index = 0;  
+  var str = document.getElementById("string").innerHTML;  
+  setInterval(function() {  
+   if(index == str.length) { 
+//清除定时器
+clearInterval();
+//若要让效果无限循环，把index归0即可
+// index = 0;
+}  
+var a = document.getElementById("showStr")
+a.innerText = str.substring(0, index++);
+},0)
+</script>
+</div>
+	</div>
+</body>
+</html>

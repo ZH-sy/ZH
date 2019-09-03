@@ -1,0 +1,169 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>判断题</title>
+<style type="text/css">
+a img
+	{
+		border:0;
+	}
+a img:hover
+	{	
+		border:0;
+	}
+body
+	{
+		cursor:url(images/gb.png),pointer;
+		overflow:scroll;
+        overflow-x:hidden;
+		overflow-y: hidden;
+		margin:0;
+	}
+.a1
+	{
+		position:relative;
+		margin:0 auto;
+		width:900px;
+		height: 620px;
+	}
+	
+#an1
+	{
+		position:absolute;
+		top:130px;
+		left:60px;
+    }
+#an2
+	{
+		position:absolute;
+		top:130px;
+		left:220px;
+	}
+
+	
+#neirong
+	{
+	position: absolute;
+	top: 120px;
+	left: 270px;
+	width: 360px;
+	height: 120px;
+	font-family: "幼圆";
+	color: #FFFFFF;
+	font-weight: bold;
+	}
+#neirong h2
+	{
+		font-size:20px;
+		line-height: 30px;
+	}
+#neirong ul
+	{
+		font-size:20px;
+	}
+	
+#result1
+	{
+		position: absolute;
+		top: 510px;
+		left: 80px;
+		width: 360px;
+		height: 200px;
+		font-family:"幼圆";
+		color:#001092;
+		font-size: 20px;
+	}
+#result2
+	{
+		position: absolute;
+		top: 520px;
+		left: 170px;
+		width: 430px;
+		height: 200px;
+		font-family:"幼圆";
+		color:#001092;
+		font-size: 20px;
+	}
+
+#next
+{
+	top: 520px;
+	position: absolute;
+	left: 87%;
+}
+#last
+	{
+		top:475px;
+		position: absolute;
+		left: 87%;
+	}
+.return
+{
+	position: absolute;
+	left: 87%;
+	top: 565px;
+}
+#next:hover,#last:hover,.return:hover
+{
+	transform:scale(1.3);
+}	
+</style>
+
+<script type="text/javascript">
+function myFunction()
+{
+	var abc=document.myform.answer.value;
+	if(abc=="answer1")
+	{
+		document.getElementById("result2").style.display = "block";
+		document.getElementById("result1").style.display = "none";
+	}
+	
+	else if(abc=="answer2")
+	{
+		document.getElementById("result1").style.display = "block";
+		document.getElementById("result2").style.display = "none";
+	}
+}
+</script>
+</head>
+
+<body>
+<div class="a1">
+	<img src="images/textbg.jpg" width="900" height="620">
+
+	<div id="neirong">
+   	  <h2>3&nbsp;.&nbsp;打篮球我们要多多练习运球、投篮。</h2>
+		<form action="" method="post" name="myform" id="myform">
+			<ul style="list-style:none;">
+				<li id="an1"><input type="radio" value="answer1" name="answer" onClick="myFunction()"/>对</li>
+				<li id="an2"><input type="radio" value="answer2" name="answer" onClick="myFunction()"/>错</li>
+			</ul>
+		</form>
+	</div>
+		<div id="result1" style="display:none">运球和投篮是篮球中最基础也是最重要的运动技能，小朋友要多多练习。</div>
+		<div id="result2" style="display:none">小朋友，回答正确！</div>
+	
+	
+	<div id="next">
+		<a href="cgpd4.html">
+		<img src="images/next.png" width="80px" height="35px">
+		</a>
+	</div>
+	
+	<div id="last">
+		<a href="cgpd2.html">
+  	    <img src="images/last.png" width="80px" height="35px">
+   		</a>
+    </div>
+	
+	<div class="return">
+	  <a href="cgcs1.html">
+	  <img src="images/return2.png" width="80px";height="60px">
+	  </a>
+	</div>
+</div>
+</body>
+</html>
+
