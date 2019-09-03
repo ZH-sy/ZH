@@ -1,0 +1,64 @@
+.show {
+	position: absolute;
+	width: 900px;
+	cursor:pointer;
+	margin-top: 100px;
+	margin-left: 50px;
+	left: 15px;
+} 
+.show.topBottom {
+	width: 900px;
+}
+.canvas{ 
+	position:absolute; 
+	left:0px; 
+	top:0px; 
+	z-index:-1;
+}
+.backcanvas{ 
+	position:absolute; 
+	left:0px; 
+	top:0px; 
+	z-index:-2;
+}
+
+.showtop, .showbottom {
+	float: left;
+}
+.showtop {
+	margin-top: 40px; 
+}
+.showbottom {
+	margin-top: 130px;
+}
+.show .showitem{
+	width:115px; 
+	height:115px; 
+	display:block; 
+	margin:10px;
+}
+.show.topBottom .showitem {
+	float: left; 
+	margin:5px; 
+}
+
+#fh a img{
+	position:absolute;
+	top:500px;
+	left:700px;
+	
+	}
+#fh a img:hover{
+	  transform:scale(1.1);
+
+	}
+.savePair img{
+	position:absolute;
+	top:480px;
+	left:90px;
+	
+	}
+.savePair img:hover{
+	  transform:scale(1.1);
+
+	}
