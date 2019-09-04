@@ -9,10 +9,14 @@ body
 		margin:0;
 	}
 #box{
-	height: 620px;
-	width: 900px;
-	margin: 0 auto;
-	position: relative;
+	height: 650px;
+	width: 1000px;
+	position:fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin: auto;
 }
 #bj{
 	position:absolute;
